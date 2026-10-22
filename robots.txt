@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /intruksi
+Disallow: /admin/
+Disallow: /.git/
+
+Sitemap: https://kurtech.my.id/sitemap.xml

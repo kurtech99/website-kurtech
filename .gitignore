@@ -1,0 +1,13 @@
+﻿# Temporary & Backup files
+*.bak
+*.bak*
+*.tmp
+*.log
+intruksi
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.BIN/
+.DS_Store
