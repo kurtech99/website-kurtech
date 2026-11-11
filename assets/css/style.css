@@ -626,18 +626,10 @@ button, input, select, textarea {
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
+  gap: 1.25rem;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
-}
-
-@media (max-width: 1024px) {
-  .apps-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 840px;
-    gap: 1.5rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -654,12 +646,13 @@ button, input, select, textarea {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2.2rem 1.6rem 2rem 1.6rem;
+  padding: 1.85rem 1.25rem 1.6rem 1.25rem;
   border-radius: 1.25rem;
   background: var(--bg-white);
   border: 1px solid var(--border-light);
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
 }
 
 .app-card.card-centered:hover {
@@ -765,12 +758,11 @@ button, input, select, textarea {
 }
 
 .app-feature-pills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
   width: 100%;
-  max-width: 450px;
-  margin: 0 auto 1.75rem auto;
+  margin: 0 auto 1.5rem auto;
 }
 
 .feature-pill {
@@ -778,11 +770,11 @@ button, input, select, textarea {
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  padding: 9px 12px;
+  padding: 8px 12px;
   background: var(--bg-soft);
   border: 1px solid var(--border-light);
-  border-radius: 10px;
-  font-size: 0.84rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-dark);
   text-align: left;
@@ -2077,7 +2069,8 @@ textarea.form-control {
     margin: 0 auto;
   }
   .apps-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
