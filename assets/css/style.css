@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    KURTECH - Solusi Server & Jaringan Terpercaya
    Design System: Light, Clean & Elegant Tech Aesthetic
    Mobile-First & Ultra Responsive UX (TV, Laptop, Tablet, Mobile)
@@ -625,17 +625,25 @@ button, input, select, textarea {
 
 .apps-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 840px;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
   .apps-grid {
     grid-template-columns: 1fr;
-    max-width: 560px;
+    max-width: 520px;
     gap: 1.5rem;
   }
 }
@@ -646,7 +654,7 @@ button, input, select, textarea {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5rem 2rem 2.2rem 2rem;
+  padding: 2.2rem 1.6rem 2rem 1.6rem;
   border-radius: 1.25rem;
   background: var(--bg-white);
   border: 1px solid var(--border-light);
@@ -667,6 +675,26 @@ button, input, select, textarea {
 .app-card.card-centered.card-vpn:hover {
   border-color: rgba(16, 185, 129, 0.6);
   box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.18);
+}
+
+.app-card.card-centered.card-mikhmon {
+  border-color: rgba(14, 165, 233, 0.3);
+  background: linear-gradient(180deg, rgba(14, 165, 233, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.app-card.card-centered.card-mikhmon:hover {
+  border-color: rgba(14, 165, 233, 0.6);
+  box-shadow: 0 20px 40px -10px rgba(14, 165, 233, 0.18);
+}
+
+.app-card.card-centered.card-billing {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.app-card.card-centered.card-billing:hover {
+  border-color: rgba(99, 102, 241, 0.6);
+  box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.18);
 }
 
 .app-card.card-centered.card-tools {
@@ -1991,8 +2019,8 @@ textarea.form-control {
     font-size: 1.15rem;
   }
   .apps-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1060px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1240px;
     margin: 0 auto;
     gap: 1.75rem;
   }
@@ -2019,8 +2047,8 @@ textarea.form-control {
     gap: 2rem;
   }
   .apps-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
   }
 }
 
