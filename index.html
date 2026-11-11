@@ -33,8 +33,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=2.1">
+  <!-- Main Stylesheet (Cache-Busted v3.0) -->
+  <link rel="stylesheet" href="assets/css/style.css?v=3.0">
+  <style>
+    /* Force 3 Columns Side-by-Side (Bypass Cloudflare & Browser Cache) */
+    .apps-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 1.25rem !important;
+      max-width: 1280px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+    .app-card.card-centered {
+      height: 100% !important;
+      padding: 1.85rem 1.25rem 1.6rem 1.25rem !important;
+    }
+    .app-feature-pills {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0.55rem !important;
+      width: 100% !important;
+      margin: 0 auto 1.5rem auto !important;
+    }
+    .feature-pill {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: 8px !important;
+      padding: 8px 12px !important;
+      border-radius: 8px !important;
+      font-size: 0.82rem !important;
+      text-align: left !important;
+    }
+    @media (max-width: 768px) {
+      .apps-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 520px !important;
+        gap: 1.5rem !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
